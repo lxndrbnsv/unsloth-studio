@@ -21,7 +21,7 @@ os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 os.environ["GRADIO_ANALYTICS_ENABLED"] = "False"
 MODEL_NAME = "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
 
-print("Installing packages for 🦥 Unsloth Studio ... Please wait 1 minute ...")
+print("Installing packages... Please wait 1 minute ...")
 
 install_first = [
     "pip", "install",
@@ -33,7 +33,7 @@ install_first.wait()
 install_second = [
     "pip", "install",
     "gradio",
-    "unsloth[colab-new]@git+https://github.com/unslothai/unsloth.git",
+    "unsloth[colab-new]@git+https://github.com/lxndrbnsv/unsloth",
 ]
 install_second = subprocess.Popen(install_second)
 
