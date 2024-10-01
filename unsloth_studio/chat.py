@@ -149,10 +149,10 @@ scene = gradio.ChatInterface(
     async_process_chatbot,
     chatbot = gradio.Chatbot(
         height = 325,
-        label = "Unsloth Studio Chat",
+        label = "Чат",
     ),
     textbox = gradio.Textbox(
-        placeholder = "Message Unsloth Chat",
+        placeholder = "Введите сообщение",
         container = False,
     ),
     title = None,
@@ -160,8 +160,8 @@ scene = gradio.ChatInterface(
     examples = None,
     cache_examples = False,
     retry_btn = None,
-    undo_btn = "Remove Previous Message",
-    clear_btn = "Restart Entire Chat",
+    undo_btn = "Удалить предыдущее сообщение",
+    clear_btn = "Перезапустить чат",
 )
 
 scene.launch(quiet = True)
