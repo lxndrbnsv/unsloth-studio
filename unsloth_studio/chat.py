@@ -162,6 +162,7 @@ scene = gradio.ChatInterface(
     retry_btn = None,
     undo_btn = "Удалить предыдущее сообщение",
     clear_btn = "Перезапустить чат",
+    css="footer {visibility: hidden}"
 )
 
 scene.launch(quiet = True)
